@@ -7,3 +7,13 @@ declare module '*.vue' {
   export default component
 }
 
+// 接口类型放到此处
+declare namespace NPage {
+
+  declare interface IUser {
+    id?: string | number;
+    avatar?: string;
+    mobile?: string | number;
+    nickname: string;
+  }
+}
